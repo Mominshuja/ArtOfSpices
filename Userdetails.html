@@ -1,0 +1,40 @@
+	<html>
+	<body>
+		<label for="email"><b>Email address</b></label><br>
+    	<input type="text" id="Email" placeholder="Enter Email" name="email" required>
+    	<br>
+    	<label for="psw"><b>Password</b></label><br>
+    	<input type="password" id="Password" placeholder="Enter Password" name="psw" required>
+    	<br>
+      	<button  onclick="writeUserData()"  style="margin-left:80px;border-radius: 10px;background-color: royalblue;">login</button>
+    <script >
+
+	//import { initializeApp } from 'firebase/app';
+	//import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';	
+	
+ 	var firebaseConfig = {
+	  apiKey: "AIzaSyC83nZfyg4AClz-axPVGrZP8qwyOtCmMgE",
+	  authDomain: "artofspices-d70a4.firebaseapp.com",
+	  databaseURL: "https://artofspices-d70a4-default-rtdb.firebaseio.com",
+	  projectId: "artofspices-d70a4",
+	  storageBucket: "artofspices-d70a4.appspot.com",
+	  messagingSenderId: "162847643781",
+	  appId: "1:162847643781:web:7e7cfa018ef2ca5b87f1ec",
+	  measurementId: "G-R2JWSVSH12"
+
+};
+	firebase.initializeApp(firebaseConfig);
+	const database = firebase.database();
+	function writeUserData(){
+		//var Emal= document.getElementByID('Email').value;
+		//var Pswrd= document.getElementByID('Password').value;
+		firebase.database().ref('users/user3').set({
+			password:"123"
+		}); 
+	}
+</script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/auth.js"></script>
+    </body>  	
+      </html>

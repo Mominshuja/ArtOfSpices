@@ -1,0 +1,490 @@
+<html>
+<head>
+<title>
+ART OF SPICES
+</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,  
+            initial-scale=1, shrink-to-fit=no">
+</head>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+	<script src="javascript.js"></script>
+	<script >
+		// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC83nZfyg4AClz-axPVGrZP8qwyOtCmMgE",
+  authDomain: "artofspices-d70a4.firebaseapp.com",
+  databaseURL: "https://artofspices-d70a4-default-rtdb.firebaseio.com",
+  projectId: "artofspices-d70a4",
+  storageBucket: "artofspices-d70a4.appspot.com",
+  messagingSenderId: "162847643781",
+  appId: "1:162847643781:web:7e7cfa018ef2ca5b87f1ec",
+  measurementId: "G-R2JWSVSH12"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+	</script>
+
+<style>
+
+img#io2
+{
+ margin-top:3vw;
+ margin-right:2vw;
+ float : right;
+ width:15vw;
+ height:22vw;
+ border:0.2vw solid black;
+}
+table#to2
+{
+ margin-top:3vw;
+ margin-left:2vw;
+ float:left;
+ background-color:rgb(220,20,60);
+ color:linen;
+ border: 0.2 solid lightgreen;
+ width:19vw;
+ height:22vw;
+ font-size:2vw;
+}
+td#td1
+{
+ padding:0.5 vw;
+ border:0.1vw solid linen;
+ text-align:center;
+}
+button#b01
+{
+ background-color : rgb(220,20,60);
+ color : linen;
+ border-color :maroon;
+ font-size:2vw;
+ width:14vw;
+}
+table#t01
+{
+ color : linen;
+ background-color : rgb(220,20,60);
+ border : 0.2vw solid black;
+ width:14.7vw;
+ height:18vw;
+}
+p#p01
+{
+ margin-top:-4vw;
+ margin-right:20vw;
+ text-align:right;
+ color:linen;
+ font-size:2vw;
+}
+img#i01
+{
+ width:14.5vw;
+ height:9.7vw;
+ float: left;
+ 
+}
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 5px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Set a style for all buttons */
+button#lgn {
+  
+  color: white;
+  padding: 14px 20px;
+  margin-top: 8px;
+  margin-left: 75px;
+  border: none;
+  cursor: pointer;
+  width: 15vw;
+  align-content: center;
+  background-color: royalblue;
+  border-radius: 10px;
+}
+.modal
+{
+ display: none;
+ position: fixed;
+ z-index:5;
+ padding-top:0px;
+ left: 30vw;
+ top:10vw;
+ width:40vw;
+ height:32vw;
+ overflow:auto;
+ background-color:linen;
+ border :0.3vw solid Maroon;
+}
+.close
+{
+ background-color:linen;
+ color:rgb(220,20,60);
+ float:right;
+ font-size:1.5vw;
+ font-weight:bold;
+}
+.close:hover,
+.close:focus{
+  color:blue;
+  cursor: pointer;
+}
+a#a01
+{
+ color:maroon;
+
+ font-size:4vw;
+}
+a#a02
+{
+ background-color:rgb(220,20,60);
+ color:linen;
+ font-size:3vw;
+ border: solid Brown;
+  margin:4vw;
+}
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: rgb(176,196,222);
+  color: Maroon;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  font-size:2vw;
+}
+table#to3
+{
+ margin-top:1vw;
+ margin-left:2vw;
+ background-color:linen;
+ color:rgb(220,20,60);
+ border: 0.2 solid lightgreen;
+ width:60vw;
+ height:22vw;
+ font-size:2vw;
+}
+td#td3
+{
+ padding:0.5 vw;
+ border:0.1vw solid rgb(220,20,60);
+ text-align:center;
+}
+th#th01
+{
+ padding:0.5 vw;
+ border:0.1vw solid Maroon;
+ color:linen;
+ background-color: Maroon;
+ text-align:center;
+ font-size:2vw;
+}
+</style>
+
+<body onload="function">
+	
+	<div style="width:99vw;height:41.1vw;border:0.2vw solid green;overflow:auto;">	
+  		<div style="margin-top:-3.97vw;width:99vw;height:10vw;background-color:rgb(220,20,60);">
+			<img id="i01" src="Restaurant.png" alt="logo"></img>
+			<img id="i01" src="Restaurant.png" alt="logo" style="position:fixed;right:0"></img>
+			<h1 style="text-shadow: -0.2vw -0.2vw 0.2 vw linen;margin-left:20vw;font-family:Courier;color:linen; text-align:left;font-size:6vw"><u>ART OF Spices</u></br></h1>
+			<p id="p01">The Taste Place.</p>
+		</div>	
+		<div style="height:20vw;width:14.7vw;float:left;background-color:white;">
+			<div>	
+				<table id="t01">	
+	
+					<tr>
+						<td><button id="b01";type="button" onclick="show('h','v','pr','e','c','hs')">Home</button></td>
+
+					</tr>
+					<tr>
+						<td><button id="b01";type="button" onclick="show('pr','v','h','e','c','hs','A')">Menu</button></td>
+					</tr>
+					<tr>
+						<td><button id="b01";type="button" onclick="show('A','h','pr','e','c','hs','v')">Account</button></td>
+					</tr>
+					<tr>
+						<td><button id="b01";type="button" onclick="show('v','h','pr','e','c','hs','A')">Branches</button></td>
+					</tr>
+					<tr>
+						<td><button id="b01";type="button" onclick="show('e','v','pr','h','c','hs','A')">Policies and Rules</button></td>
+					</tr>
+					<tr>
+						<td><button id="b01";type="button" onclick="show('c','v','pr','e','h','hs','A')">Contact us :</button></td>
+					</tr>
+				</table>
+        		</div>
+		</div>
+		<div style="background-image:linear-gradient(to top right,white,white);width:84vw;height:31vw;float:left;overflow:auto;display:block;">
+				 		
+				<p id="hs" style="font-size:5vw;Position:fixed;top:81;text-align:center">
+				   <img src="restaurant m.jpg" width="1140 px" Height="248 px">
+				   Welcome to ART OF SPICES!!!      
+				</p>
+				<p " id="A" style="font-size:5vw;Position:fixed;top:81;text-align:center;display: none;">
+				   <button class="myBtn" onclick="interlogin()" style="margin: 140px 480px;"><figure><img src="avatar.jpg" style="width:5vw;height:5vw;"></img></figure></button>
+				   <br>
+				   <button onclick="sign_out()">sign out</button>
+				   <br>
+				   <button id="WUD">Checking real time database</button>
+					<div  class="modal" style="background-color:white;border-color: maroon;border-radius: 25px;width:26vw;left: 38vw;">
+						<div style="height:1.8vw;width:25.5vw;background-color:Maroon;">
+						<span class="close">&times;</span>
+						</div>
+						<div class="modal-content" style="background-color: white;">
+							<div id='login'>
+  							<div class="container" style="width: 25vw;background-color:white;margin: 0px 5px;color: black;border-radius: 25px;">
+    							<h1 style="text-align: center;">Login</h1>
+    							<hr>
+
+    							<label for="email"><b>Email address</b></label><br>
+    								<input type="text" id="Email" placeholder="Enter Email" name="email" required>
+    									<br>
+    									<label for="psw"><b>Password</b></label><br>
+    								<input type="password" id="Password" placeholder="Enter Password" name="psw" required>
+    									<br>
+      							<button id="lgn" onclick="login_fun()" class="loginbtn">login</button>
+      							<hr>
+      								<p style="text-align: center;"> Don't have account?</p>
+								</div>      							<button id="lgn"  onclick="show('signup','login')">Sign up</button>
+
+							</div>
+							 <div id='signup' style="display: none;">
+    
+    	<div class="container" style="width: 25vw;background-color:white;margin: 0px 5px;color: black;border-radius: 25px;">
+    							<h1 style="text-align: center;">Login</h1>
+    							<hr>
+		<label for="email"><b>Email address</b></label><br>
+    	<input id='userEmail' type="text" placeholder="Enter Email" name="email" required>
+    	<br>
+    	<label for="psw"><b>Password</b></label><br>
+    	<input type="password" id="userPass" placeholder="Enter Password" name="psw" required>
+    	<br>
+    	<label for="psw-repeat"><b>Repeat Password</b></label>
+    	<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    	<br>
+    	<p style="text-align:center;">By creating an account you agree to our <a href="#" style="color:dodgerblue"><br>Terms & Privacy</a>.</p>
+		<div>
+      	<button id="lgn" onclick="signup_fun()" style="margin-left:90px;border-radius: 10px;background-color: royalblue;">Sign up</button>
+		</div>
+    	</div>
+  		</div>
+						</div>
+							
+					</div>
+					</td></tr>
+				</p>
+				<p id="v" style ="display:none;font-size:5vw;margin-left:2vw;">
+				    Our Branches:
+  					 <table id="to3">
+								<tr>
+									<td id="td3">Moradabad</td>
+									<td id="td3">Address:H-No 80G, MDA Colony near Sonakpur Stadium, Moradabad, 0591-244772</td>
+									<td id="td3"><a href="https://goo.gl/maps/HXMoiacfhMXfzp9J6">Get Direction</td>
+								</tr>
+								<tr>
+									<td id="td3">Aligarh</td>
+									<td id="td3">Address:H-No 20y,Hem Chand Compound, Aligarh 0591-244773</td>
+									<td id="td3"><a href="https://goo.gl/maps/1GfL9Z732fkGyojM7">Get Direction</td>
+								</tr>
+								<tr>
+									<td id="td3">New Delhi</td>
+									<td id="td3">Address:H48, Block H, Lajpat Nagar III, Lajpat Nagar, New Delhi 0591-244771</td>
+									<td id="td3"><a href="https://goo.gl/maps/gQBh6vR6u6mreioYA">Get Direction</td>
+								</tr>
+								
+							</table>
+				</p>
+				<p id="h" style="font-size:5vw;Position:fixed;top:81;text-align:center">
+				   <img src="restaurant m.jpg" width="1140 px" Height="248 px">
+				   Welcome to ART OF SPICES!!!      
+				</p>
+				<p id="e" style ="display:none;color:maroon;font-size:3vw;text-align:center;" >
+				    Click below to read Restaurant Policies and Rules.</br>
+					<a id="a01" href="rules policies.pdf">Policies</a>
+				</p>
+				<p id="c" style ="display:none;color:maroon;font-size:3vw;text-align:center;" >
+						 Click the button to Contact us through mail</br>
+ 					<a id="a01" href="mailto:mominshuja.mca19.du@gmail.com?subject=Contactus&cc=cc@example.com">Contact us:</a> 
+				</p>
+				<p id="pr" style ="display:none">
+					<table>
+					<tr><th id="th01"> JUNK FOODS:</th></tr>
+					<tr><td>
+					<button class="myBtn" onclick="fo(0)"><figure><img src="burger.jpeg" style="width:15vw;height:15vw;"></img><figcaption>Zinger Burger with</br> extra mayonnaise</figcaption></figure></button>
+					<div class="modal" style="position:absolute;z-index:9;">
+						<div style="height:1.8vw;width:40vw;background-color:Maroon">
+						<span class="close">&times;</span>
+						</div>
+						<div class="modal-content">
+							<table id="to2">
+								<tr>
+									<td id="td1">Id</td>
+									<td id="td1">B01</td>
+								</tr>
+								<tr>
+									<td id="td1">special</td>
+									<td id="td1">Extra Mayonnaise</td>
+								</tr>
+								<tr>
+									<td id="td1">Size</td>
+									<td id="td1">Regular</td>
+								</tr>
+								<tr>
+									<td id="td1">Ratings</td>
+									<td id="td1">3.8/5</td>
+								</tr>
+								<tr>
+									<td id="td1">Price</td>
+									<td id="td1">90</td>
+								</tr>
+							</table>
+							<a href="burger.jpeg"download target="blank">
+							<img id="io2" src="burger.jpeg"></img></a>
+							<a id="a02" href="https://www.google.com">Order Now</a>
+						</div>
+					</div>
+					</td>
+					<td>
+					<button class="myBtn" onclick="fo(1)"><figure><img src="Pizza.jpeg" style="width:15vw;height:15vw;"></img><figcaption>Pizza with</br> extra cheese</figcaption></figure></button>
+					<div  class="modal">
+						<div style="height:1.8vw;width:40vw;background-color:maroon">
+						<span class="close">&times;</span>
+						</div>
+						<div class="modal-content">
+							<table id="to2">
+								<tr>
+									<td id="td1">Id</td>
+									<td id="td1">p01</td>
+								</tr>
+								<tr>
+									<td id="td1">Special</td>
+									<td id="td1">Extra cheese with corn</td>
+								</tr>
+								<tr>
+									<td id="td1">Size</td>
+									<td id="td1">Regular</td>
+								</tr>
+								<tr>
+									<td id="td1">Ratings</td>
+									<td id="td1">4.2/5</td>
+								</tr>
+								<tr>
+									<td id="td1">Price</td>
+									<td id="td1">210</td>
+								</tr>
+							</table>
+							<a href="Pizza.jpeg"download target="blank">
+							<img id="io2" src="Pizza.jpeg"></img></a>
+							<a id="a02" href="https://www.google.com">Order Now</a>
+							
+						</div>
+					</div>
+					</td></tr>
+					<tr><td>
+					<tr><th id="th01"> Beverages:</th></tr>
+						<tr><td>
+					<button class="myBtn" onclick="fo(2)"><figure><img src="Icecofee.jpeg" style="width:15vw;height:15vw;"></img><figcaption>Ice Cofee sugar free</figcaption></figure></button>
+					<div class="modal" style="position:absolute;z-index:9;">
+						<div style="height:1.8vw;width:40vw;background-color:Maroon">
+						<span class="close">&times;</span>
+						</div>
+						<div class="modal-content">
+							<table id="to2">
+								<tr>
+									<td id="td1">Id</td>
+									<td id="td1">D03</td>
+								</tr>
+								<tr>
+									<td id="td1">Cream</td>
+									<td id="td1">Vanilla</td>
+								</tr>
+								<tr>
+									<td id="td1">Size</td>
+									<td id="td1">200 ml</td>
+								</tr>
+								<tr>
+									<td id="td1">Ratings</td>
+									<td id="td1">3.5/5</td>
+								</tr>
+								<tr>
+									<td id="td1">Price</td>
+									<td id="td1">120</td>
+								</tr>
+							</table>
+							<a href="Icecofee.jpeg"download target="blank">
+							<img id="io2" src="Icecofee.jpeg"></img></a>
+							<a id="a02" href="https://www.google.com">Order Now</a>
+						</div>
+					</div>
+					</td>
+					<td>
+					<button class="myBtn" onclick="fo(3)"><figure><img src="Chocolate shake.jpg" style="width:15vw;height:15vw;"></img><figcaption>Chocolate Shake</figcaption></figure></button>
+					<div  class="modal">
+						<div style="height:1.8vw;width:40vw;background-color:maroon">
+						<span class="close">&times;</span>
+						</div>
+						<div class="modal-content">
+							<table id="to2">
+								<tr>
+									<td id="td1">Product Id</td>
+									<td id="td1">D01</td>
+								</tr>
+								<tr>
+									<td id="td1">Chocolate</td>
+									<td id="td1">Dark</td>
+								</tr>
+								<tr>
+									<td id="td1">Amount</td>
+									<td id="td1">200 ml</td>
+								</tr>
+								<tr>
+									<td id="td1">Ratings</td>
+									<td id="td1">4/5</td>
+								</tr>
+								<tr>
+									<td id="td1">Price</td>
+									<td id="td1">80</td>
+								</tr>
+							</table>
+							<a href="Chocolate shake.jpg"download target="blank">
+							<img id="io2" src="Chocolate shake.jpg"></img></a>
+							<a id="a02" href="https://www.google.com">Order Now</a>
+							
+						</div>
+					</div>
+					</td></tr>
+
+				</pr>  
+	</div>
+    </div>
+  		</div>
+					</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+	<html>
+
+
+
+		<label for="email"><b>Email address</b></label><br>
+    	<input type="text" id="Email" placeholder="Enter Email" name="email" required>
+    	<br>
+    	<label for="psw"><b>Password</b></label><br>
+    	<input type="password" id="Password" placeholder="Enter Password" name="psw" required>
+    	<br>
+      	<button onclick="login_fun()" class="loginbtn" style="margin-left:80px;border-radius: 10px;background-color: royalblue;">login</button>
+
+
+      </html>

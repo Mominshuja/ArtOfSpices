@@ -1,0 +1,138 @@
+<html>
+<head>
+	</head>
+<body style="background-color: rgb(220,20,60);">
+
+<script>
+function show(shown,hd1) 
+{
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hd1).style.display='none';
+  
+}
+</script>
+<style type="text/css">
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 5px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Set a style for all buttons */
+button {
+  
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  align-content: center;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+</style>
+<div id="image" style="padding: 20px 20px;width: 63% ;height: 90%; border-right:1px solid grey;">
+	
+	<div id="logo">
+		<img id="i01" src="logocircle.png" alt="logo" height="250px" width="250px" style="position: fixed;top:120px;left: 300px"></img>
+		<p id="hs" style="font-size:4vw;Position:fixed;top:320;text-align:center;color:white">
+				   Welcome to ART OF SPICES!!!      
+				</p>
+				<p style="font-size:4vw;Position:fixed;top:380 ;left:500px ;color:white">The Taste Place.</p>
+	</div>
+	<div id='login'>
+  	<div class="container" style="width: 300px;background-color:white;margin: 100px 950px;color: black;border-radius: 25px;">
+    	<h1 style="text-align: center;">Login</h1>
+    	<hr>
+
+    	<label for="email"><b>Email address</b></label><br>
+    	<input type="text" id="Email" placeholder="Enter Email" name="email" required>
+    	<br>
+    	<label for="psw"><b>Password</b></label><br>
+    	<input type="password" id="Password" placeholder="Enter Password" name="psw" required>
+    	<br>
+      	<button onclick="login_fun()" class="loginbtn" style="margin-left:80px;border-radius: 10px;background-color: royalblue;">login</button>
+      	<button onclick="continue_site()" class="loginbtn" style="margin-left:80px;border-radius: 10px;background-color: royalblue;">Continue without login</button>
+      	<hr>
+      	<p style="text-align: center;"> Don't have account?</p>
+      	<button id="mybtn"  onclick="show('signup','login')" style="margin-left:80px;margin-top: -8px;border-radius: 10px;background-color: royalblue;">Sign up</button>
+	</div>
+	</div>
+    <div id='signup' style="display: none;">
+    
+    	<div class="container" style="width: 300px;background-color:white;margin: 100px 950px;color: black;border-radius: 25px;">
+    	<h1 style="text-align: center;">Signup</h1>
+    	<hr>
+		<label for="email"><b>Email address</b></label><br>
+    	<input id='userEmail' type="text" placeholder="Enter Email" name="email" required>
+    	<br>
+    	<label for="psw"><b>Password</b></label><br>
+    	<input type="password" id="userPass" placeholder="Enter Password" name="psw" required>
+    	<br>
+    	<label for="psw-repeat"><b>Repeat Password</b></label>
+    	<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    	<br>
+    	<p style="text-align:center;">By creating an account you agree to our <a href="#" style="color:dodgerblue"><br>Terms & Privacy</a>.</p>
+		<div>
+      	<button onclick="signup_fun()" style="margin-left:90px;border-radius: 10px;background-color: royalblue;">Sign up</button>
+      	<button onclick="writeUserData()" style="margin-left:90px;border-radius: 10px;background-color: royalblue;">WUD</button>
+		</div>
+    	</div>
+  		</div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+	<script src="javascript.js"></script>
+</html>
